@@ -5,8 +5,9 @@ from app import app
 # BASE_URL = "http://127.0.0.1:5000/api/content"
 
 @pytest.fixture
-def client(app):
+def client():
   """PyTest fixture to set up the Flask test client."""
+  app.testing = True
   with app.test_client() as client:
     return client
 
