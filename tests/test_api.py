@@ -9,7 +9,7 @@ def client():
   """PyTest fixture to set up the Flask test client."""
   app.testing = True
   with app.test_client() as client:
-    return client
+    yield client
 
 def test_content_api_status_code():
   """Test if API returns status code 200"""
