@@ -11,12 +11,12 @@ def client():
   with app.test_client() as client:
     yield client
 
-def test_content_api_status_code():
+def test_content_api_status_code(client):
   """Test if API returns status code 200"""
   response = client.get('/api/content') # Use Flask's test client instead of requests
   assert response.status_code == 200
 
-def test_content_structure():
+def test_content_structure(client):
   """Test if the returned content has the correct structure"""
   response = client.get('/api/content')
   content = response.get_json() # Use get_json() to parse the response as JSON
@@ -31,7 +31,7 @@ def test_content_structure():
     assert "genre" in item
     assert "episodes" in item
 
-def test_content_data_type():
+def test_content_data_type(client):
   """Test if the content fields have the correct data types"""
   response = client.get('/api/content')
   content = response.get_json()
