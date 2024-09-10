@@ -8,7 +8,7 @@ My objective was to create a simple test automation framework that validates a l
 
 ## Features Implemented
 
-### 1. Mock API for Streaming Content ([app.py]((https://github.com/adisoundsgood/streaming-content-validator/blob/main/app.py))):
+### 1. Mock API for Streaming Content ([app.py](https://github.com/adisoundsgood/streaming-content-validator/blob/main/app.py)):
 - Used Flask to build a basic API that serves streaming content data (show names, genres, episode counts).
 - Used a small dataset representing various content categories such as sports and entertainment.
 
