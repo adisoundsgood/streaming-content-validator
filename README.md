@@ -8,20 +8,20 @@ My objective was to create a simple test automation framework that validates a l
 
 ## Features Implemented
 
-### 1. Mock API for Streaming Content (app.py):
+### 1. Mock API for Streaming Content ([app.py]([url](https://github.com/adisoundsgood/streaming-content-validator/blob/main/app.py))):
 - Used Flask to build a basic API that serves streaming content data (show names, genres, episode counts).
 - Used a small dataset representing various content categories such as sports and entertainment.
 
-### 2. Use PyTest to automate testing for (tests/test_api.py):
+### 2. Use PyTest to automate testing for ([tests/test_api.py]([url](https://github.com/adisoundsgood/streaming-content-validator/blob/main/tests/test_api.py))):
 - Correct data structure validation (all fields (title, genre, and episodes) are present).
 - Data accuracy checks (e.g., ensuring the number of episodes is an integer).
 - API response times.
   
-### 3. Test Coverage Reporting (python-app.yml):
+### 3. Test Coverage Reporting ([python-app.yml]([url](https://github.com/adisoundsgood/streaming-content-validator/blob/main/.github/workflows/python-app.yml))):
 - Implemented test coverage reporting using pytest-cov track code coverage.
 - As per Github actions workflow, coverage reports are uploaded per code push/build.
   
-### 4. Continuous Integration (python-app.yml):
+### 4. Continuous Integration ([python-app.yml]([url](https://github.com/adisoundsgood/streaming-content-validator/blob/main/.github/workflows/python-app.yml))):
 - Set up a basic CI pipeline using GitHub Actions to run tests on every code push.
 
 ## Tools and Tech Stack:
