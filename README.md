@@ -4,25 +4,25 @@
 
 ## Overview
 
-My objective was to create a simple test automation framework that validates a list of content from a mock streaming service (or API) to ensure data consistency and accuracy. This simulates a real-world scenario of testing backend APIs and services in a streaming platform.
+My objective was to create a simple test automation framework that validates a list of content from a mock streaming service to ensure data consistency and accuracy. This simulates a real-world scenario of testing backend APIs and services in a streaming platform.
 
 ## Features Implemented
 
-1. Mock API for Streaming Content:
-- Use Flask or Django to build a basic API that serves streaming content data (e.g., show names, genres, episode counts, etc.).
-- You could use a small dataset representing various content categories like sports, entertainment, and news to align with Disney+ and ESPN+.
-Automated Testing:
+### 1. Mock API for Streaming Content (app.py):
+- Used Flask to build a basic API that serves streaming content data (show names, genres, episode counts).
+- Used a small dataset representing various content categories such as sports and entertainment.
 
-2. Use PyTest or unittest to automate testing for:
-- Correct data structure validation (e.g., all fields like title, genre, and episodes are present).
+### 2. Use PyTest to automate testing for (tests/test_api.py):
+- Correct data structure validation (all fields (title, genre, and episodes) are present).
 - Data accuracy checks (e.g., ensuring the number of episodes is an integer).
 - API response times.
   
-3. Test Coverage Reporting:
-- Implement test coverage reporting using pytest-cov or a similar tool to track code coverage.
+### 3. Test Coverage Reporting (python-app.yml):
+- Implemented test coverage reporting using pytest-cov track code coverage.
+- As per Github actions workflow, coverage reports are uploaded per code push/build.
   
-4. Continuous Integration (Optional):
-- Set up a basic CI pipeline using GitHub Actions to run your tests on every code push.
+### 4. Continuous Integration (python-app.yml):
+- Set up a basic CI pipeline using GitHub Actions to run tests on every code push.
 
 ## Tools and Tech Stack:
 - Python
